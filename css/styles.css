@@ -32,7 +32,7 @@ h2 {
 
 h3 {
     color: #2E2F42;
-    font-size: 36px;
+    font-size: 20px;
     font-weight: 500;
     text-align: center;
     line-height: 1.2;
@@ -92,9 +92,9 @@ button {
     padding-right: 16px;
 }
 
-/* -----------------mobile heading style------------------- */
+/* -----------------mobile header style------------------- */
 
-@media screen and (max-width: 767px) {
+
 
 .nav {
     display: none;
@@ -127,6 +127,7 @@ address {
     text-align: left;
 }
 
+@media screen and (max-width: 767px) {
 .page-header-container {
     display: flex;
     align-items: center;
@@ -134,11 +135,22 @@ address {
 }
 
 .page-header {
-     padding-top: 17px;
-     padding-bottom: 17px;
+     padding: 16px 0;
 }
 
-/* секція 1 slogan */
+.mobile-menu-open-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+    color: #2F2F37;
+}
+
+.mobile-menu-open-btn-icon {
+
+}
+
+/* -------------------------------------- секція 1 slogan ------------------------------------*/
 
 .slogan {
     width: 288px;
@@ -146,17 +158,17 @@ address {
     text-align: center;
     margin-left: 0 auto;
     margin-right: 0 auto;
-    margin-top: 72px;
-    margin-bottom: 72px;
+   
 }
 
 .slogan-section {
     min-height: 432px;
     min-width: 320px;
+    padding-top: 72px;
+    padding-bottom: 72px;
     margin: 0 auto;
     background: #2E2F42;
     text-align: center;
-    /* padding: 16px 0 16px; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -176,7 +188,6 @@ address {
 }
 
 .slogan-button {
-    cursor: pointer;
     background: #4D5AE5;
     display: block;
     min-width: 169px;
@@ -185,7 +196,7 @@ address {
     border-radius: 4px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 72px;
+    margin-top: 72px;
 }
 
 .slogan-button:hover,
@@ -193,16 +204,17 @@ address {
     background: #404BBF;
 }
 
-/* секція 2 benefits */
+/* -----------------------------------секція 2 benefits---------------------------------- */
 
 .benefits-list {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
+    text-align: left;
     font-weight: 500;
+    color: #434455;
     gap: 72px;
-    padding-top: 92px;
-    padding-bottom: 92px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .benefits {
@@ -222,8 +234,12 @@ address {
 .team-section {
     background: #f4f4fd;
     margin: 96px 0;
+    padding: 0 28px;
 }
 
+.team-container {
+    padding: 0 28px;
+}
 .our-team-title {
     margin-bottom: 72px;
     text-align: center;
@@ -355,15 +371,15 @@ address {
 
 .footer-slogan {
     color: #F4F4FD;
-    max-width: 288px;
-    height: 72px;
+    min-width: 288px;
+    min-height: 72px;
 }
 
 .footer-section {
     background-color: #2E2F42;
     min-width: 320px;
-    height: 664px;
-    padding: 96px 0;
+    min-height: 664px;
+    padding: 97.5px 0 96px;
 }
 
 .footer-section .logo {
@@ -373,7 +389,7 @@ address {
 .footer-section .logo-link {
     display: block;
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 17.5px;
     padding: 0;
 }
 
@@ -461,8 +477,8 @@ text-align: center;
     font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    width: 264px;
-    height: 40px;
+    min-width: 288px;
+    min-height: 40px;
     padding-left: 16px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -475,16 +491,17 @@ text-align: center;
     justify-content: center;
     align-items: center;
     min-width: 165px;
-    height: 40px;
+    min-height: 40px;
     color: #FFFFFF;
     font-weight: 500;
     letter-spacing: 0.04em;
     line-height: 1.5;
-    cursor: pointer;
     background: #4D5AE5;
     border-radius: 4px;
     border: 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 8px 24px;
+    margin: 0 auto;
 }
 
 .send-btn-icon {
