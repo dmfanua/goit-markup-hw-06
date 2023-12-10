@@ -66,6 +66,13 @@ img {
     display: block;
 }
 
+.link {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+    padding: 24px 0;
+}
+
 button {
     cursor: pointer;
 }
@@ -84,37 +91,31 @@ button {
     overflow: hidden;
 }
 
+.section {
+    padding: 96px 0;
+}
+
 .container {
     max-width: 432px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 
-/* -----------------mobile header style------------------- */
+/*---------------------------------------------- header ----------------------------------------------------- */
 
-
-
-.nav {
-    display: none;
+.page-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-address {
-    display: none;
-}
-
-.logo-link {
-    font-family: "Raleway", sans-serif;
-    color: #404bbf;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-align: left;
-
+.page-header {
+    padding: 16px 0;
+    border-bottom: 1px solid #E7E9FC;
+    background: #FFF;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+        0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+        0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .logo {
@@ -127,27 +128,86 @@ address {
     text-align: left;
 }
 
-@media screen and (max-width: 767px) {
-.page-header-container {
+.logo-link {
+    font-family: "Raleway", sans-serif;
+    color: #404bbf;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+
+.menu {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
-.page-header {
-     padding: 16px 0;
+.nav-link {
+    color: #2E2F42;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-menu-open-btn {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    line-height: 0;
-    color: #2F2F37;
+.nav li {
+    display: inline-block;
 }
 
-.mobile-menu-open-btn-icon {
+.nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
 
+.tel a {
+    color: #434455;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.tel {
+    display: flex;
+    gap: 40px;
+    flex-grow: 50;
+}
+
+address {
+    margin-left: auto;
+}
+
+.link:hover,
+.link:focus {
+    color: #404BBF;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #404BBF;
+}
+
+.nav-link:active {
+    text-decoration: underline;
+}
+
+.current {
+    position: relative;
+    color: #404bbf;
+}
+
+.nav-link.current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404BBF;
 }
 
 /* -------------------------------------- секція 1 slogan ------------------------------------*/
@@ -156,16 +216,13 @@ address {
     width: 288px;
     height: 160px;
     text-align: center;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
-   
+    margin: 0 auto;
 }
 
 .slogan-section {
     min-height: 432px;
     min-width: 320px;
-    padding-top: 72px;
-    padding-bottom: 72px;
+    padding: 72px 0;
     margin: 0 auto;
     background: #2E2F42;
     text-align: center;
@@ -174,7 +231,16 @@ address {
     background-size: 100%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-image:
-        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/dark-bg-mobile.jpg");
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/bg/dark-bg-mobile.jpg");
+}
+
+@media screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx),
+screen and (min-device-pixel-ratio: 2) {
+    .slogan-section {
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/bg/dark-bg-mobile@2x.jpg");
+    }
 }
 
 .button-text {
@@ -213,8 +279,6 @@ address {
     font-weight: 500;
     color: #434455;
     gap: 72px;
-    padding-top: 96px;
-    padding-bottom: 96px;
 }
 
 .benefits {
@@ -233,13 +297,13 @@ address {
 
 .team-section {
     background: #f4f4fd;
-    margin: 96px 0;
     padding: 0 28px;
 }
 
 .team-container {
-    padding: 0 28px;
+    padding: 96px 0;
 }
+
 .our-team-title {
     margin-bottom: 72px;
     text-align: center;
@@ -425,7 +489,7 @@ address {
 
 .social-title {
     display: block;
-text-align: center;
+    text-align: center;
     color: #FFFFFF;
     font-weight: 500;
     margin-bottom: 16px;
@@ -514,17 +578,237 @@ text-align: center;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
+
+/* ======================================== mobile style ======================================= */
+
+@media screen and (max-width: 767px) {
+.nav {
+        display: none;
+    }
+
+    address {
+        display: none;
+    }
+
+.mobile-menu-open-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+    color: #2F2F37;
+}
 }
 
-/* ----------------- tablet styles--------------------- */
+/* ======================================================== tablet styles================================================== */
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
-
+.mobile-menu-open-btn {
+    display: none;
+}
+    
+.mobile-menu-wrapper {
+    display: none;
 }
 
+.container {
+    max-width: 768px;
+}
 
-/* ------------------ desktop styles ------------------ */
+/* ---------------------------- header----------------------------------- */
+
+.page-header-container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto
+}
+
+.tel {
+    display: block;
+    gap: 12px;
+}
+
+.nav-link {
+    padding-top: 0;
+}
+
+.nav {
+    margin-left: 120px;
+}
+
+.tel a {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    line-height: 1.076;
+}
+/* ------------------------------ секція 1 slogan -------------------------*/
+
+.slogan {
+    width: 496px;
+    height: 120px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.slogan-section {
+    min-height: 436px;
+    min-width: 768px;
+    padding: 112px 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/bg/dark-bg-tablet.jpg");
+}
+    
+    @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+        .slogan-section {
+            background-image:
+                linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/bg/dark-bg-tablet@2x.jpg");
+        }
+}
+
+.slogan-button {
+    margin-top: 36px;
+}
+
+h1 {
+    font-size: 56px;
+}
+
+/* -----------------------------------секція 2 benefits---------------------------------- */
+
+.benefits-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 72px;
+    column-gap: 24px;
+}
+
+.benefits-title {
+    margin-bottom: 8px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.benefits {
+    width: calc((100% - 24px) / 2);
+}
+
+/*----------------------------------секція 3 our team ----------------------------*/
+
+.team-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 64px;
+    column-gap: 24px;
+}
+
+/* ----------------------------секція 4 portfolio ------------------------------------------*/
+
+ .portfolio-cards {
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 72px;
+    column-gap: 24px;
+ }
+
+.item {
+width: calc((100% - 24px) / 2);
+}
+
+/*------------------------------------ footer----------------------------------------*/
+
+.footer-section {
+    min-width: 768px;
+    min-height: 456px;
+    padding: 96px 0 96px;
+}
+
+.footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 108px;
+    gap: 0;
+}
+
+.footer-social {
+    margin-left: 24px;
+    /* margin-right: 130px; */
+}
+
+.footer-slogan {
+    min-width: 264px;
+}
+
+.subscribe-form {
+    flex-direction: row;
+    
+}
+
+.subscribe-title {
+    text-align: left;
+    padding-top: 72px;
+}
+
+.footer-box .logo-link {
+    text-align: left;
+}
+
+.subscribe-form-input {
+    min-width: 264px;
+}
+
+} 
+
+
+/* ======================================= desktop styles =========================================*/
 
 @media screen and (min-width: 1158px) {
+
+.mobile-menu-open-btn {
+    display: none;
+}
+
+.section {
+     padding: 120px 0;
+}
+
+.container {
+    max-width: 1158px;
+}
+/* -----------------------------header----------------------------------- */
+
+.page-header-container {
+    display: flex;
+    align-items: baseline;
+    margin: 0 auto
+}
+
+/* ------------------------------ секція 1 slogan -------------------------*/
+
+.slogan {
+    max-width: 496px;
+    height: 120px;
+    margin-bottom: 48px;
+}
+
+.slogan-section {
+    min-height: 1440px;
+    min-width: 600px;
+    padding: 188px 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/bg/dark-bg-desktop.jpg");
+}
+
+@media screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx),
+screen and (min-device-pixel-ratio: 2) {
+    .slogan-section {
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/bg/dark-bg-desktop@2x.jpg");
+    }
+}
 
 }
