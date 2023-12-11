@@ -302,11 +302,11 @@ screen and (min-device-pixel-ratio: 2) {
 
 .team-section {
     background: #f4f4fd;
-    padding: 0 28px;
+    padding: 96px 0;
 }
 
 .team-container {
-    padding: 96px 0;
+    padding: 0 28px;
 }
 
 .our-team-title {
@@ -619,32 +619,6 @@ screen and (min-device-pixel-ratio: 2) {
     max-width: 768px;
 }
 
-/* ---------------------------- header----------------------------------- */
-
-/* .page-header-container {
-    display: flex;
-    align-items: center;
-    margin: 0 auto
-}
-
-.tel {
-    display: block;
-    gap: 12px;
-}
-
-.nav-link {
-    padding-top: 0;
-}
-
-.nav {
-    margin-left: 120px;
-}
-
-.tel a {
-    font-size: 12px;
-    letter-spacing: 0.04em;
-    line-height: 1.076;
-} */
 /* ------------------------------ секція 1 slogan -------------------------*/
 
 .slogan {
@@ -747,8 +721,7 @@ width: calc((100% - 24px) / 2);
 }
 
 .subscribe-form {
-    flex-direction: row;
-    
+    flex-direction: row;  
 }
 
 .subscribe-title {
@@ -780,6 +753,7 @@ width: calc((100% - 24px) / 2);
 
 .container {
     max-width: 1158px;
+    padding: 0 16px;
 }
 /* -----------------------------header----------------------------------- */
 
@@ -789,12 +763,41 @@ width: calc((100% - 24px) / 2);
     margin: 0 auto
 }
 
-/* ------------------------------ секція 1 slogan -------------------------*/
+.page-header {
+    padding: 24px 0;
+}
+
+.tel {
+    display: flex;
+    gap: 40px;
+    flex-grow: 50;
+}
+
+.tel a {
+    color: #434455;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-left: 76px;
+}
+
+/* ------------------------------- секція 1 slogan -------------------------*/
+
+h1 {
+    font-size: 56px;
+}
 
 .slogan {
-    max-width: 496px;
+    width: 496px;
     height: 120px;
-    margin-bottom: 48px;
+    text-align: center;
+    margin-bottom: 0 auto 48px;
 }
 
 .slogan-section {
@@ -813,6 +816,117 @@ screen and (min-device-pixel-ratio: 2) {
         background-image:
             linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/bg/dark-bg-desktop@2x.jpg");
     }
+}
+
+.slogan-button {
+    margin-top: 48px;
+}
+
+/* --------------------- benefits---------------------------- */
+
+.benefits-list {
+    display: flex;
+    gap: 24px;
+    font-weight: 400;
+    text-align: left;
+    flex-wrap: nowrap;
+}
+
+.benefits {
+    width: calc((100% - 24px) / 4);
+}
+
+.benefits-title {
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.benefits-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    width: 264px;
+    border: 1px solid #8E8F99;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+/*----------------------------------секція 3 our team ----------------------------*/
+
+.team-container {
+    padding: 0 16px;
+}
+
+.team-list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.team-cards {
+    width: calc((100% - 72px) / 4);
+}
+
+/* ----------------------------секція 4 portfolio ------------------------------------------*/
+
+.portfolio-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.item {
+    width: calc((100% - 48px) / 3);
+}
+
+/*------------------------------------ footer----------------------------------------*/
+
+.footer-section {
+    min-height: 312px;
+    min-width: 1440px;
+    padding: 100px 159px 0 156px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+
+/* .footer-box {
+    margin-right: 120px;
+} */
+
+.subscribe-form-wrapper {
+    display: block;
+    margin-right: 0;
+    margin-left: 80px;
+    align-content: flex-end;
+}
+
+.subscribe-form-input {
+    min-width: 264px;
+}
+
+.subscribe-form {
+    flex-direction: row;
+}
+
+.footer-box .logo-link {
+    text-align: left;
+}
+
+.footer-social {
+    margin-left: 120px;
+    /* margin-right: 130px; */
+}
+
+.footer-slogan {
+    min-width: 24px;
 }
 
 }
