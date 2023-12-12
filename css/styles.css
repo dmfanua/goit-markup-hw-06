@@ -1178,6 +1178,7 @@ screen and (min-device-pixel-ratio: 2) {
     .benefits-title {
         margin-bottom: 8px;
         text-align: left;
+        font-size: 20px;
     }
 
     .benefits-box {
