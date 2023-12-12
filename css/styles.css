@@ -844,7 +844,7 @@ screen and (min-device-pixel-ratio: 2) {
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .mobile-menu-wrapper.is-open {
+    .mobile-menu-wrapper .is-open {
         transform: translateX(0%);
         transition: transform 250ms;
     }
@@ -1080,6 +1080,10 @@ screen and (min-device-pixel-ratio: 2) {
     .container {
         max-width: 1158px;
         padding: 0 16px;
+    }
+
+    .mobile-menu-wrapper {
+        display: none;
     }
 
     /* -----------------------------header----------------------------------- */
