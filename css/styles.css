@@ -612,8 +612,8 @@ screen and (min-device-pixel-ratio: 2) {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 408px;
-    min-height: 584px;
+    width: 288px;
+    min-height: 623px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: #FCFCFC;
     border-radius: 4px;
@@ -650,7 +650,7 @@ screen and (min-device-pixel-ratio: 2) {
 }
 
 .contacts-form-description {
-    width: 360px;
+    width: 256px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -813,7 +813,7 @@ screen and (min-device-pixel-ratio: 2) {
 /* ======================================== mobile style ======================================= */
 
 @media screen and (max-width: 767px) {
-.nav {
+    .nav {
         display: none;
     }
 
@@ -821,48 +821,48 @@ screen and (min-device-pixel-ratio: 2) {
         display: none;
     }
 
-.mobile-menu-open-btn {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    line-height: 0;
-    color: #2F2F37;
-}
+    .mobile-menu-open-btn {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        line-height: 0;
+        color: #2F2F37;
+    }
 }
 
 /* =================================================== tablet styles================================================== */
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
-.mobile-menu-open-btn {
-    display: none;
-}
-    
-.mobile-menu-wrapper {
-    display: none;
-}
+    .mobile-menu-open-btn {
+        display: none;
+    }
 
-.container {
-    max-width: 768px;
-}
+    .mobile-menu-wrapper {
+        display: none;
+    }
 
-/* ------------------------------ секція 1 slogan -------------------------*/
+    .container {
+        max-width: 768px;
+    }
 
-.slogan {
-    width: 496px;
-    height: 120px;
-    text-align: center;
-    margin: 0 auto;
-}
+    /* ------------------------------ секція 1 slogan -------------------------*/
 
-.slogan-section {
-    min-height: 436px;
-    min-width: 768px;
-    padding: 112px 0;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    background-image:
-        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/bg/dark-bg-tablet.jpg");
-}
-    
+    .slogan {
+        width: 496px;
+        height: 120px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .slogan-section {
+        min-height: 436px;
+        min-width: 768px;
+        padding: 112px 0;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/bg/dark-bg-tablet.jpg");
+    }
+
     @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
     screen and (min-device-pixel-ratio: 2) {
@@ -870,289 +870,304 @@ screen and (min-device-pixel-ratio: 2) {
             background-image:
                 linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/bg/dark-bg-tablet@2x.jpg");
         }
+    }
+
+    .slogan-button {
+        margin-top: 36px;
+    }
+
+    h1 {
+        font-size: 56px;
+    }
+
+    /* -----------------------------------секція 2 benefits---------------------------------- */
+
+    .benefits-list {
+        flex-wrap: wrap;
+        flex-direction: row;
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+
+    .benefits-title {
+        margin-bottom: 8px;
+        text-align: left;
+        font-weight: 700;
+        font-size: 36px;
+    }
+
+    .benefits {
+        width: calc((100% - 24px) / 2);
+    }
+
+    /*----------------------------------секція 3 our team ----------------------------*/
+
+    .team-list {
+        flex-wrap: wrap;
+        flex-direction: row;
+        row-gap: 64px;
+        column-gap: 24px;
+    }
+
+    /* ----------------------------секція 4 portfolio ------------------------------------------*/
+
+    .portfolio-cards {
+        flex-wrap: wrap;
+        flex-direction: row;
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+
+    .item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    /*------------------------------------ footer----------------------------------------*/
+
+    .footer-section {
+        min-width: 768px;
+        min-height: 456px;
+        padding: 96px 0 96px;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 108px;
+        gap: 0;
+    }
+
+    .footer-social {
+        margin-left: 24px;
+        /* margin-right: 130px; */
+    }
+
+    .footer-slogan {
+        min-width: 264px;
+    }
+
+    .subscribe-form {
+        flex-direction: row;
+    }
+
+    .subscribe-title {
+        text-align: left;
+        padding-top: 72px;
+    }
+
+    .footer-box .logo-link {
+        text-align: left;
+    }
+
+    .subscribe-form-input {
+        min-width: 264px;
+    }
+
 }
-
-.slogan-button {
-    margin-top: 36px;
-}
-
-h1 {
-    font-size: 56px;
-}
-
-/* -----------------------------------секція 2 benefits---------------------------------- */
-
-.benefits-list {
-    flex-wrap: wrap;
-    flex-direction: row;
-    row-gap: 72px;
-    column-gap: 24px;
-}
-
-.benefits-title {
-    margin-bottom: 8px;
-    text-align: left;
-    font-weight: 700;
-    font-size: 36px;
-}
-
-.benefits {
-    width: calc((100% - 24px) / 2);
-}
-
-/*----------------------------------секція 3 our team ----------------------------*/
-
-.team-list {
-    flex-wrap: wrap;
-    flex-direction: row;
-    row-gap: 64px;
-    column-gap: 24px;
-}
-
-/* ----------------------------секція 4 portfolio ------------------------------------------*/
-
- .portfolio-cards {
-    flex-wrap: wrap;
-    flex-direction: row;
-    row-gap: 72px;
-    column-gap: 24px;
- }
-
-.item {
-width: calc((100% - 24px) / 2);
-}
-
-/*------------------------------------ footer----------------------------------------*/
-
-.footer-section {
-    min-width: 768px;
-    min-height: 456px;
-    padding: 96px 0 96px;
-}
-
-.footer-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-left: 108px;
-    gap: 0;
-}
-
-.footer-social {
-    margin-left: 24px;
-    /* margin-right: 130px; */
-}
-
-.footer-slogan {
-    min-width: 264px;
-}
-
-.subscribe-form {
-    flex-direction: row;  
-}
-
-.subscribe-title {
-    text-align: left;
-    padding-top: 72px;
-}
-
-.footer-box .logo-link {
-    text-align: left;
-}
-
-.subscribe-form-input {
-    min-width: 264px;
-}
-
-} 
 
 /* ======================================= desktop styles =========================================*/
 
 @media screen and (min-width: 1158px) {
 
-.mobile-menu-open-btn {
-    display: none;
-}
-
-.section {
-     padding: 120px 0;
-}
-
-.container {
-    max-width: 1158px;
-    padding: 0 16px;
-}
-/* -----------------------------header----------------------------------- */
-
-.page-header-container {
-    display: flex;
-    align-items: baseline;
-    margin: 0 auto
-}
-
-.page-header {
-    padding: 24px 0;
-}
-
-.tel {
-    display: flex;
-    gap: 40px;
-    flex-grow: 50;
-}
-
-.tel a {
-    color: #434455;
-    font-style: normal;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.nav {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    margin-left: 76px;
-}
-
-/* ------------------------------- секція 1 slogan -------------------------*/
-
-h1 {
-    font-size: 56px;
-}
-
-.slogan {
-    width: 496px;
-    height: 120px;
-    text-align: center;
-    margin-bottom: 0 auto 48px;
-}
-
-.slogan-section {
-    min-height: 600px;
-    min-width: 1440px;
-    padding: 188px 0;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    background-image:
-        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/bg/dark-bg-desktop.jpg");
-}
-
-@media screen and (min-resolution: 192dpi),
-screen and (min-resolution: 2dppx),
-screen and (min-device-pixel-ratio: 2) {
-    .slogan-section {
-        background-image:
-            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/bg/dark-bg-desktop@2x.jpg");
+    .mobile-menu-open-btn {
+        display: none;
     }
-}
 
-.slogan-button {
-    margin-top: 48px;
-}
+    .section {
+        padding: 120px 0;
+    }
 
-/* --------------------- benefits---------------------------- */
+    .container {
+        max-width: 1158px;
+        padding: 0 16px;
+    }
 
-.benefits-list {
-    display: flex;
-    gap: 24px;
-    font-weight: 400;
-    text-align: left;
-    flex-wrap: nowrap;
-}
+    /* -----------------------------header----------------------------------- */
 
-.benefits {
-    width: calc((100% - 24px) / 4);
-}
+    .page-header-container {
+        display: flex;
+        align-items: baseline;
+        margin: 0 auto
+    }
 
-.benefits-title {
-    margin-bottom: 8px;
-    text-align: left;
-}
+    .page-header {
+        padding: 24px 0;
+    }
 
-.benefits-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 112px;
-    width: 264px;
-    border: 1px solid #8E8F99;
-    background-color: #F4F4FD;
-    border-radius: 4px;
-    margin-bottom: 8px;
-}
+    .tel {
+        display: flex;
+        gap: 40px;
+        flex-grow: 50;
+    }
 
-/*----------------------------------секція 3 our team ----------------------------*/
+    .tel a {
+        color: #434455;
+        font-style: normal;
+        text-decoration: none;
+        font-size: 16px;
+    }
 
-.team-container {
-    padding: 0 16px;
-}
+    .nav {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        margin-left: 76px;
+    }
 
-.team-list {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-}
+    /* ------------------------------- секція 1 slogan -------------------------*/
 
-.team-cards {
-    width: calc((100% - 72px) / 4);
-}
+    h1 {
+        font-size: 56px;
+    }
 
-/* ----------------------------секція 4 portfolio ------------------------------------------*/
+    .slogan {
+        width: 496px;
+        height: 120px;
+        text-align: center;
+        margin-bottom: 0 auto 48px;
+    }
 
-.portfolio-cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
-}
+    .slogan-section {
+        min-height: 600px;
+        min-width: 1440px;
+        padding: 188px 0;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/bg/dark-bg-desktop.jpg");
+    }
 
-.item {
-    width: calc((100% - 48px) / 3);
-}
+    @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+        .slogan-section {
+            background-image:
+                linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/bg/dark-bg-desktop@2x.jpg");
+        }
+    }
 
-/*------------------------------------ footer----------------------------------------*/
+    .slogan-button {
+        margin-top: 48px;
+    }
 
-.footer-section {
-    min-height: 312px;
-    min-width: 1440px;
-    padding: 100px 159px 0 156px;
-}
+    /* --------------------- benefits---------------------------- */
 
-.footer-container {
-    display: flex;
-    flex-direction: row;
-    gap: 0;
-}
+    .benefits-list {
+        display: flex;
+        gap: 24px;
+        font-weight: 400;
+        text-align: left;
+        flex-wrap: nowrap;
+    }
 
-/* .footer-box {
+    .benefits {
+        width: calc((100% - 24px) / 4);
+    }
+
+    .benefits-title {
+        margin-bottom: 8px;
+        text-align: left;
+    }
+
+    .benefits-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 112px;
+        width: 264px;
+        border: 1px solid #8E8F99;
+        background-color: #F4F4FD;
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
+
+    /*----------------------------------секція 3 our team ----------------------------*/
+
+    .team-container {
+        padding: 0 16px;
+    }
+
+    .team-list {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .team-cards {
+        width: calc((100% - 72px) / 4);
+    }
+
+    /* ----------------------------секція 4 portfolio ------------------------------------------*/
+
+    .portfolio-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 48px;
+    }
+
+    .item {
+        width: calc((100% - 48px) / 3);
+    }
+
+    /*------------------------------------ footer----------------------------------------*/
+
+    .footer-section {
+        min-height: 312px;
+        min-width: 1440px;
+        padding: 100px 159px 0 156px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+    }
+
+    /* .footer-box {
     margin-right: 120px;
 } */
 
-.subscribe-form-wrapper {
-    display: block;
-    margin-right: 0;
-    margin-left: 80px;
-    align-content: flex-end;
+    .subscribe-form-wrapper {
+        display: block;
+        margin-right: 0;
+        margin-left: 80px;
+        align-content: flex-end;
+    }
+
+    .subscribe-form-input {
+        min-width: 264px;
+    }
+
+    .subscribe-form {
+        flex-direction: row;
+    }
+
+    .footer-box .logo-link {
+        text-align: left;
+    }
+
+    .footer-social {
+        margin-left: 120px;
+        /* margin-right: 130px; */
+    }
+
+    .footer-slogan {
+        min-width: 24px;
+    }
+
 }
 
-.subscribe-form-input {
-    min-width: 264px;
-}
+/* ==================== modal ========================== */
 
-.subscribe-form {
-    flex-direction: row;
-}
+@media screen and (min-width: 768px) {
 
-.footer-box .logo-link {
-    text-align: left;
-}
+    .modal {
+        width: 408px;
+        min-height: 584px;
+    }
 
-.footer-social {
-    margin-left: 120px;
-    /* margin-right: 130px; */
-}
-
-.footer-slogan {
-    min-width: 24px;
-}
-
+    .contacts-form-description {
+        width: 360px;
+    }
 }
