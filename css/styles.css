@@ -70,7 +70,6 @@ img {
     margin-top: 0;
     margin-bottom: 0;
     text-decoration: none;
-    padding: 24px 0;
 }
 
 button {
@@ -111,7 +110,6 @@ button {
 }
 
 .page-header {
-    padding: 16px 0;
     border-bottom: 1px solid #E7E9FC;
     background: #FFF;
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
@@ -225,7 +223,6 @@ address {
 }
 
 .slogan-section {
-    min-height: 432px;
     min-width: 320px;
     padding: 72px 0;
     margin: 0 auto;
@@ -292,6 +289,8 @@ screen and (min-device-pixel-ratio: 2) {
 
 .benefits-title {
     margin-bottom: 8px;
+    font-size: 36px;
+    font-weight: 700;
 }
 
 .benefits-box {
@@ -618,7 +617,7 @@ screen and (min-device-pixel-ratio: 2) {
     background-color: #FCFCFC;
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 72px 24px 24px 24px;
+    padding: 72px 17px 24px 16px;
 }
 
 .modal-close-btn {
@@ -739,10 +738,18 @@ screen and (min-device-pixel-ratio: 2) {
 }
 
 .contacts-form-checkbox-label {
+    display: flex;
+    min-width: 231px;
+    align-items: center;
     font-size: 12px;
     line-height: 1.17;
-    letter-spacing: 0.04em;
+    /* letter-spacing: 0.04em; */
     color: #8e8f99;
+    gap: 8px;
+}
+
+.prsvacy {
+    display: flex;
 }
 
 .contacts-form-own-checkbox {
@@ -751,7 +758,6 @@ screen and (min-device-pixel-ratio: 2) {
     justify-content: center;
     width: 16px;
     height: 16px;
-    margin-right: 8px;
     border: 1px solid rgba(46, 47, 66, 0.40);
     border-radius: 2px;
     fill: transparent;
@@ -803,7 +809,6 @@ screen and (min-device-pixel-ratio: 2) {
 }
 
 .accent-color {
-    margin-left: 4px;
     color: #4D5AE5;
     font-size: 12px;
     letter-spacing: 0.48px;
@@ -836,8 +841,8 @@ screen and (min-device-pixel-ratio: 2) {
         top: 0;
         left: 0;
         z-index: 99999;
-        min-width: 320px;
-        min-height: 640px;
+        min-width: 100%;
+        min-height: 100%;
         background-color: #FFF;
         border: 1px solid #31D0AA;
         transform: translateX(100%);
@@ -928,6 +933,9 @@ screen and (min-device-pixel-ratio: 2) {
         gap: 40px;
     }
 
+    .ocean a {
+        color: #404BBF;
+    }
 }
 
 /* =================================================== tablet styles================================================== */
@@ -1033,7 +1041,7 @@ screen and (min-device-pixel-ratio: 2) {
     .footer-container {
         flex-direction: row;
         flex-wrap: wrap;
-        padding-left: 108px;
+        width: 584px;
         gap: 0;
     }
 
@@ -1133,7 +1141,7 @@ screen and (min-device-pixel-ratio: 2) {
 
     .slogan-section {
         min-height: 600px;
-        min-width: 1440px;
+        max-width: 1440px;
         padding: 188px 0;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         background-image:
@@ -1217,9 +1225,7 @@ screen and (min-device-pixel-ratio: 2) {
     /*------------------------------------ footer----------------------------------------*/
 
     .footer-section {
-        min-height: 312px;
-        min-width: 1440px;
-        padding: 100px 159px 0 156px;
+        padding: 100px 0;
     }
 
     .footer-container {
@@ -1256,6 +1262,13 @@ screen and (min-device-pixel-ratio: 2) {
         min-width: 24px;
     }
 
+    .social-title {
+        text-align: left;
+    }
+
+    .subscribe-title {
+        text-align: left;
+    }
 }
 
 /* ==================== modal ========================== */
