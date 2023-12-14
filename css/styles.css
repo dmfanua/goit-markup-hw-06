@@ -1087,6 +1087,9 @@ screen and (min-device-pixel-ratio: 2) {
         min-width: 264px;
     }
 
+    .social-title {
+        text-align: left;
+    }
 }
 
 /* ======================================= desktop styles =========================================*/
