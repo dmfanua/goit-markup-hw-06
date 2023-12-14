@@ -70,6 +70,7 @@ img {
     margin-top: 0;
     margin-bottom: 0;
     text-decoration: none;
+    display: block;
 }
 
 button {
@@ -151,6 +152,12 @@ button {
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-top: 0;
+    padding: 24px 0;
+}
+
+address .nav-link {
+    padding-bottom: 0;
+    padding-top: 0;
 }
 
 .nav li {
@@ -174,11 +181,17 @@ button {
 }
 
 .tel {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 12px;
 }
 
+
 address {
+    display: flex;
+    justify-content: center;
     margin-left: auto;
 }
 
@@ -911,13 +924,12 @@ screen and (min-device-pixel-ratio: 2) {
         gap: 24px;
     }
 
-    .mobile-menu-wrapper a {
+    .mobile-menu-contacts-link {
         color: #434455;
-        font-style: normal;
-        text-decoration: none;
     }
 
     .mobile-menu-link {
+        color: #2E2F42;
         font-style: normal;
         text-decoration: none;
     }
@@ -933,8 +945,12 @@ screen and (min-device-pixel-ratio: 2) {
         gap: 40px;
     }
 
-    .ocean a {
+    .accent-color-2 {
         color: #404BBF;
+    }
+
+    .accent-color-3 {
+        color: #4D5AE5;
     }
 }
 
@@ -1102,12 +1118,9 @@ screen and (min-device-pixel-ratio: 2) {
         margin: 0 auto
     }
 
-    .page-header {
-        padding: 24px 0;
-    }
-
     .tel {
         display: flex;
+        flex-direction: row;
         gap: 40px;
         flex-grow: 50;
     }
